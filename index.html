@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="././css/style.css">
+    <link rel="stylesheet" href="././css/all.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css"
+        integrity="sha384-/frq1SRXYH/bSyou/HUp/hib7RVN1TawQYja658FEOodR/FQBKVqT9Ol+Oz3Olq5" crossorigin="anonymous" />
+    <title>To-Do List</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="toDoList_content">
+            <header>
+                <h1>To-Do List</h1>
+            </header>
+            <form id="form">
+                <input type="text" name="" id="InputAdd" placeholder="Task . .">
+                <button>Add</button>
+            </form>
+            <div class="filter">
+                <input type="text" name="" id="InputFilter" placeholder="Find Task . .">
+            </div>
+            <div class="taskList">
+                <ul id="UlList">
+                    <!--  <li>
+                        <p>
+                            Salam !
+                            <sub>15.22.30</sub>
+                   
+                        <div class="right_content">
+
+                            <div class="checkbox">
+                                <input type="checkbox" name="" id="">
+                            </div>
+                            <div class="delete_icon">
+                                <i class="fas fa-trash"></i>
+                            </div>
+                        </div>
+                    </li>-->
+                </ul>
+
+            </div>
+            <footer>
+                <div class="selected_category">
+                    <select name="" id="Category">
+                        <option value="Education">Education</option>
+                        <option value="Sport">Sport</option>
+                        <option value="FreeTime">Free Time</option>
+                        <option value="Default">Default</option>
+                    </select>
+                </div>
+                <div class="buttons">
+                    <button id="delete_btn">Delete</button>
+                    <button id="clear_btn">Clear</button>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="./app/ui.js"></script>
+    <script src="./app/storage.js"></script>
+    <script src="./app/app.js"></script>
+
+
+</body>
+
+</html>

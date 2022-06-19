@@ -1,0 +1,210 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  list-style-type: none;
+  color: #fff;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media only screen and (max-width: 600px) {
+  .toDoList_content {
+    width: 100% !important;
+    height: 100vh !important;
+    border-radius: 0 !important;
+    -webkit-border-radius: 0 !important;
+    -moz-border-radius: 0 !important;
+    -ms-border-radius: 0 !important;
+    -o-border-radius: 0 !important;
+  }
+}
+
+.toDoList_content {
+  width: 40%;
+  height: 90vh;
+  background-color: #1a354c;
+  padding: 10px;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr 5fr 1fr;
+  grid-row-gap: 15px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+h1 {
+  text-align: center;
+  padding: 15px;
+  color: #fff;
+}
+
+form {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 8fr 2fr;
+  grid-column-gap: 15px;
+}
+input[type="text"] {
+  width: 100%;
+  padding: 10px 15px;
+  background-color: #f1eee9;
+  font-size: 17px;
+  color: rgb(118, 118, 118);
+}
+input::placeholder {
+  font-size: 17px;
+}
+button {
+  cursor: pointer;
+  font-size: 17px;
+  border: none;
+  background-color: #73777b;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+ul {
+  width: 100%;
+  height: 40vh;
+  background-color: #566879;
+  padding: 10px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  overflow-y: scroll;
+}
+ul::-webkit-scrollbar {
+  width: 10px;
+}
+
+ul::-webkit-scrollbar-track {
+  background: none;
+}
+
+ul::-webkit-scrollbar-thumb {
+  background: #97aab9;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+}
+
+ul::-webkit-scrollbar-thumb:hover {
+  background: #e9ebef;
+}
+li {
+  min-height: 45px;
+  padding-left: 10px;
+  background-color: #1a354c;
+  font-size: 19px;
+  margin: 10px 0;
+  position: relative;
+  display: grid;
+  align-items: center;
+  grid-template-columns: 9fr 1fr;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.err-message {
+  background-color: #f24c4c;
+}
+.right_content {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.delete_icon {
+  width: 0;
+  height: 100%;
+  background-color: #f24c4c;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0 10px 10px 0;
+  -webkit-border-radius: 0 10px 10px 0;
+  -moz-border-radius: 0 10px 10px 0;
+  -ms-border-radius: 0 10px 10px 0;
+  -o-border-radius: 0 10px 10px 0;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+
+li i {
+  display: none !important;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+li:hover .delete_icon {
+  width: 50px;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+li:hover i {
+  display: block !important;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+}
+input[type="checkbox"] {
+  margin: 0 10px;
+  height: 15px;
+  width: 15px;
+}
+sub {
+  font-size: 14px;
+  margin-left: 10px;
+}
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+select,
+footer button {
+  padding: 0 10px;
+  min-height: 20%;
+  height: 70%;
+}
+select,
+option {
+  background-color: #f1eee9;
+  color: rgb(118, 118, 118);
+}
+
+#delete_btn {
+  background-color: #f24c4c;
+}
+#clear_btn {
+  background-color: #ec9b3b;
+}
