@@ -18,16 +18,15 @@ class Ui {
     }
     container.innerHTML += `
   <li>
-  <p>
+  <p >
   <span id="text">
       ${paramsInput}
       </span>
       <sub id='date'>${date}</sub>
       
   </p>
+ 
   <div class="right_content">
-
-    
       <div class="delete_icon">
           <i class="fas fa-trash"></i>
       </div>

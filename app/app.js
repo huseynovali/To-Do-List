@@ -7,7 +7,6 @@ let FooterButtons = document.querySelector(".buttons");
 let Delete_btn = document.getElementById("delete_btn");
 let Clear_btn = document.getElementById("clear_btn");
 let Li_date = document.getElementById("date");
-
 let ui = new Ui();
 let storage = new Storage();
 
